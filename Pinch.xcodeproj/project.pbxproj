@@ -15,6 +15,7 @@
 		AE4E2CBF27A42E8F00FF6EF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4E2CBE27A42E8F00FF6EF5 /* Assets.xcassets */; };
 		AE4E2CC227A42E8F00FF6EF5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4E2CC127A42E8F00FF6EF5 /* Preview Assets.xcassets */; };
 		AE4E2CCE27A44E9F00FF6EF5 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4E2CCD27A44E9F00FF6EF5 /* InfoPanelView.swift */; };
+		AE5BE00727B481390055B234 /* ShowTime in Frameworks */ = {isa = PBXBuildFile; productRef = AE5BE00627B481390055B234 /* ShowTime */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE5BE00727B481390055B234 /* ShowTime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +129,9 @@
 			dependencies = (
 			);
 			name = Pinch;
+			packageProductDependencies = (
+				AE5BE00627B481390055B234 /* ShowTime */,
+			);
 			productName = Pinch;
 			productReference = AE4E2CB727A42E8E00FF6EF5 /* Pinch.app */;
 			productType = "com.apple.product-type.application";
@@ -155,6 +160,9 @@
 				Base,
 			);
 			mainGroup = AE4E2CAE27A42E8E00FF6EF5;
+			packageReferences = (
+				AE5BE00527B481390055B234 /* XCRemoteSwiftPackageReference "ShowTime" */,
+			);
 			productRefGroup = AE4E2CB827A42E8E00FF6EF5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -391,6 +399,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AE5BE00527B481390055B234 /* XCRemoteSwiftPackageReference "ShowTime" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KaneCheshire/ShowTime.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AE5BE00627B481390055B234 /* ShowTime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE5BE00527B481390055B234 /* XCRemoteSwiftPackageReference "ShowTime" */;
+			productName = ShowTime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AE4E2CAF27A42E8E00FF6EF5 /* Project object */;
 }
